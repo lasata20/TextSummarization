@@ -59,6 +59,10 @@ textarea[type="text"]::placeholder {
 
 
 }
+.error-message {
+    color: red;
+  }
+  
 
 .originalTxt {
     background-color: #ffffff;
