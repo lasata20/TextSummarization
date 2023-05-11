@@ -1,0 +1,88 @@
+body {
+    background-image: url('summarization-featured.jpg');
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: #abc9f7;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width:300%;
+    }
+    to{
+        margin-left: 0%;
+        width:100%;
+    }
+}
+
+.form-control {
+    height: 500px;
+
+}
+
+textarea[type="text"]::placeholder {
+    color: #999; /* sets the color of the placeholder text */
+    font-style: italic; /* sets the font style of the placeholder text */
+    font-size: 16px; /* sets the font size of the placeholder text */
+    font-weight: bold; /* sets the font weight of the placeholder text */
+    text-align:inherit;
+}
+  
+.original_title {
+    background-color: #e5edfc;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    justify-content: center;
+    display: flex;
+    border-radius: 7px;
+}
+
+.summary_title {
+    background-color: #e5edfc;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    justify-content: center;
+    display: flex;
+    border-radius: 7px;
+}
+
+.srt {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.originalTxt {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.summaryTxt {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 10px;
+
+}
+
+.heading {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.lead {
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    margin-top: 10px;
+}
