@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ne">
+
 <head>
   <meta charset="UTF-8">
   <meta charset="utf-8">
@@ -11,6 +12,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
   <div class="container">
     <div class="jumbotron jumbotron-fluid">
@@ -23,7 +25,7 @@
     </div>
     <form onsubmit="return validateInput()" action="/analyze" method="post">
       <textarea id="rawtext" type="text" name="rawtext" rows="5" class="form-control"
-                placeholder="Enter your text here (नेपाली)"></textarea>
+        placeholder="Enter your text here (नेपाली)"></textarea>
       <button class="btn btn-primary submitBtn" type="submit">Summarize</button>
     </form>
     <div class="error" style="display: none; color: red;">Please enter only Nepali language.</div>
@@ -38,17 +40,17 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script>
-   function validateInput() {
-  var rawtext = document.getElementById('rawtext').value;
-  var regex = /^[\u0900-\u097F\s"'–]*$/gm;
-// only Nepali  characters
-  if (!rawtext.match(regex)) {
-    document.querySelector('.error').style.display = 'block';
-    return false;
-  }
-  return true;
-}
+    function validateInput() {
+      var rawtext = document.getElementById('rawtext').value;
+      var regex = /^[\u0900-\u097F\s"'–]*$/gm; // only Nepali  characters
+      if (!rawtext.match(regex)) {
+        document.querySelector('.error').style.display = 'block';
+        return false;
+      }
+      return true;
+    }
 
   </script>
 </body>
+
 </html>
