@@ -42,7 +42,7 @@
   <script>
     function validateInput() {
       var rawtext = document.getElementById('rawtext').value;
-      var regex = /^[\u0900-\u097F\s"'–]*$/gm; // only Nepali  characters
+      var regex = /^[\u0900-\u097F\s" ,'–]*$/gm; // only Nepali  characters
       if (!rawtext.match(regex)) {
         document.querySelector('.error').style.display = 'block';
         return false;
