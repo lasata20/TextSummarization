@@ -4,11 +4,6 @@ from Summarizer.summarizer import get_summary_from_text_file
 app = Flask(__name__)
 
 
-@app.route('/')
-def login():
-    return render_template('login.html')
-
-
 @app.route('/login', methods=['GET', 'POST'])
 def handle_login():
     username = request.form['username']
@@ -21,11 +16,6 @@ def handle_login():
 
 if __name__ == "__main__":
     app.run()
-
-
-@app.route('/')
-def index():
-    return render_template("index.html")
 
 
 @app.route('/analyze', methods=['GET', 'POST'])
