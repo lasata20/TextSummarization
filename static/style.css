@@ -1,4 +1,4 @@
-.container {
+.section {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -7,13 +7,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .container h2 {
+  .section h2 {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .container input[type="text"],
-  .container input[type="password"] {
+  .section input[type="text"],
+  .section input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -21,7 +21,7 @@
     border-radius: 3px;
   }
   
-  .container input[type="submit"] {
+  .section input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #4caf50;
@@ -31,13 +31,13 @@
     cursor: pointer;
   }
   
-  .container input[type="submit"]:hover {
+  .section input[type="submit"]:hover {
     background-color: #45a049;
   }
 
-  
+
 body {
-    background-image: url('summarization-featured.jpg');
+    
     background-size: cover;
 }
 

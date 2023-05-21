@@ -18,6 +18,11 @@ if __name__ == "__main__":
     app.run()
 
 
+@app.route('/')
+def login():
+    return render_template('login.html')
+
+
 @app.route('/summary', methods=['POST'])
 def summary():
     if request.method == 'POST':
