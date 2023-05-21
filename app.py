@@ -13,16 +13,14 @@ def login():
 def handle_login():
     username = request.form['username']
     password = request.form['password']
-    # Add your login logic here
-    # For example, you can check the credentials against a database or perform any other authentication process
     if username == 'admin' and password == 'password':
-        return 'Login successful!'
+        return render_template('index.html')
     else:
         return 'Login failed!'
 
 
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
 @app.route('/')
