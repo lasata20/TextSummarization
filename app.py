@@ -9,7 +9,7 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def handle_login():
     username = request.form['username']
     password = request.form['password']
@@ -20,7 +20,7 @@ def handle_login():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
 
 @app.route('/')
