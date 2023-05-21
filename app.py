@@ -18,8 +18,8 @@ if __name__ == "__main__":
     app.run()
 
 
-@app.route('/analyze', methods=['GET', 'POST'])
-def analyze():
+@app.route('/summary', methods=['POST'])
+def summary():
     if request.method == 'POST':
         rawtext = request.form.get('rawtext', False)
         summary = get_summary_from_text_file(rawtext)
