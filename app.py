@@ -14,7 +14,7 @@ def handle_login():
     username = request.form['username']
     password = request.form['password']
     if username == 'admin' and password == 'password':
-        return render_template('index.html')
+        return render_template('/index.html')
     else:
         return 'Login failed!'
 
