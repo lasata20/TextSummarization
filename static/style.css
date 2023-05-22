@@ -1,13 +1,11 @@
-body {
-    
-    background-size: cover;
-}
+
 
 .jumbotron {
     background-color: #abc9f7;
     animation-duration: 2s;
     animation-name: slidein;
-    
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 @keyframes slidein {
@@ -22,7 +20,10 @@ body {
 }
 
 .form-control {
-    height: 500px;
+    margin-left: 32px;
+    height: 300px;
+    width: 1300px;
+
 
 }
 
@@ -90,6 +91,8 @@ textarea[type="text"]::placeholder {
 
 .submitBtn {
     margin-top: 10px;
+    margin-left: 32px;
+    
 }
 
 
